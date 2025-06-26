@@ -1,0 +1,21 @@
+site_name: tim-personal-website
+site_url: https://timydevs.example
+theme:
+  name: material
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: black
+      accent: grey
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: white
+      accent: blue grey
+    
