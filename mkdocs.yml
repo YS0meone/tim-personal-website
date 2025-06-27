@@ -1,7 +1,11 @@
-site_name: tim-personal-website
+site_name: timyuan.dev
 site_url: https://timydevs.example
+
 theme:
   name: material
+  favicon: assets/favicon.svg
+  icon:
+    logo: material/city-variant
   palette:
     # Dark Mode
     - scheme: slate
@@ -18,4 +22,25 @@ theme:
         name: Light mode
       primary: white
       accent: blue grey
-    
+
+# Extra information and links
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:timyuan1016@gmail.com
+      name: Email
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tim-yuan-3a9873223/
+      name: LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/YS0meone
+      name: GitHub
+
+# Copyright
+copyright: Copyright &copy; 2025 Tim Yuan. All rights reserved.
+  
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
