@@ -1,11 +1,19 @@
 site_name: timyuan.dev
 site_url: https://timydevs.example
+repo_url: https://github.com/YS0meone/portfolio
+repo_name: YS0meone/portfolio
 
 theme:
   name: material
   favicon: assets/favicon.svg
   icon:
     logo: material/city-variant
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
   palette:
     # Dark Mode
     - scheme: slate
@@ -22,6 +30,17 @@ theme:
         name: Light mode
       primary: white
       accent: blue grey
+nav:
+  - Home: 
+    - index.md
+  - Learn: 
+    - learn/index.md
+    - Daily Logs:
+      - July, 2025 :
+        - learn/2025/07-july/index.md
+        - learn/2025/07-july/2025-07-03.md
+  - Resources:
+    - resources/index.md
 
 # Extra information and links
 extra:
@@ -39,8 +58,41 @@ extra:
 # Copyright
 copyright: Copyright &copy; 2025 Tim Yuan. All rights reserved.
   
+
 markdown_extensions:
+  # Basic Markdown
   - attr_list
+  - md_in_html
+  - tables
+  - sane_lists
+  - toc:
+      permalink: true
+  
+  # PyMdown Extensions for enhanced features
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
+  # Additional useful extensions
+  - def_list
+  - footnotes
+  - abbr
+  - admonition
+  - pymdownx.details
