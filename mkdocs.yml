@@ -69,6 +69,7 @@ markdown_extensions:
       permalink: true
   
   # PyMdown Extensions for enhanced features
+  
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
